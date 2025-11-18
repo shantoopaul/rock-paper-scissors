@@ -1,0 +1,88 @@
+/* Intial animation for the Circle */
+@keyframes init-circle-paper {
+    0% {
+        transform: translate(16rem, 115px) scale(0.1) rotate(360deg);
+    }
+
+    100% {
+        transform: translate() scale(1);
+    }
+}
+
+@keyframes init-circle-scissors {
+    0% {
+        transform: translate(-16rem, 115px) scale(0.1) rotate(360deg);
+    }
+
+    100% {
+        transform: translate() scale(1);
+    }
+}
+
+@keyframes init-circle-rock {
+    0% {
+        transform: translateY(-145px) scale(0.1) rotate(360deg);
+    }
+
+    100% {
+        transform: translate() scale(1);
+    }
+}
+
+/* End of Intial animation for the Circle */
+
+
+/* pulse-animation */
+@keyframes super-pulse {
+    25% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(0.8);
+    }
+}
+
+/* end of pulse-animation */
+
+/* result circles*/
+
+@keyframes init-circle-result {
+    0% {
+        transform: scale(0) rotate(360deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes result-slide-left {
+    0% {
+        transform: translateX(0rem);
+    }
+
+    100% {
+        transform: translateX(-12rem);
+    }
+}
+
+@keyframes result-slide-right {
+    0% {
+        transform: translateX(0rem);
+    }
+
+    100% {
+        transform: translateX(11rem);
+    }
+}
+
+@keyframes result-announcement {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

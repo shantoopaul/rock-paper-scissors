@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock, Paper, Scissors</title>
+
+    <!-- Stylesheets -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Josefin+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font-awesome -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Scoreboard Section -->
+        <div class="scoreboard">
+            <ul class="scoreboard__list">
+                <li class="scoreboard__list__items">Rock</li>
+                <li class="scoreboard__list__items">Paper</li>
+                <li class="scoreboard__list__items">Scissors</li>
+            </ul>
+            <div class="scoreboard__score-display">
+                <h2 class="scoreboard__score-display__text">
+                    Score
+                    <span class="scoreboard__score-display__score" id="score">12</span>
+                </h2>
+            </div>
+        </div>
+        <!-- End of Scoreboard Section -->
+
+        <!-- Main-Game Section -->
+        <main class="main-section">
+            <div class="main-game">
+                <div class="main-game__container" id="main-game">
+                    <img src="./images/bg-triangle.svg" alt="triangle" class="main-game__triangle">
+                    <div class="main-game__circle-paper circle" id="paper"></div>
+                    <div class="main-game__circle-scissors circle" id="scissors"></div>
+                    <div class="main-game__circle-rock circle" id="rock"></div>
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <section class="result">
+                    <div class="player-picked player-picked-container">
+                        <h3 class="player-picked__heading">You Picked</h3>
+                        <div class="player-picked__circle player-choose"></div>
+                    </div>
+
+                    <div class="announcement">
+                        <h2 class="announcement__heading heading-winner">You Lose</h2>
+                        <div class="announcement__btn reset">Play Again</div>
+                    </div>
+
+                    <div class="house-picked house-picked-container">
+                        <h3 class="house-picked__heading">The house picked</h3>
+                        <div class="house-picked__circle computer-choose"></div>
+                    </div>
+            </section>
+            <!-- End of Result Section -->
+        <!-- End of Main-Game Section -->
+        </main>
+
+        <!-- Final Section -->
+        <div class="final">
+            <div class="btn-final rules" id="rules">
+                Rules
+            </div>
+        </div>
+        <!--End of Final Section -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-top">
+                <h3>Rules</h3>
+                <img src="./images/icon-close.svg" alt="close modal" class="close-btn">
+            </div>
+            <img src="./images/image-rules.svg" alt="Rules" class="img-rules">
+        </div>
+    </div>
+    <!-- End of Modal -->
+
+
+    <!-- Scripts -->
+
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

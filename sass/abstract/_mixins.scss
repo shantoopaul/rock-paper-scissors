@@ -1,0 +1,81 @@
+@mixin font {
+    font-family: 'Barlow Semi Condensed',
+        sans-serif;
+}
+
+@mixin circle-common {
+    position: absolute;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s;
+
+    @media screen and (max-width: 800px) {
+        width: 19rem;
+        height: 19rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+}
+
+@mixin picked {
+    margin-top: 8rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+@mixin result-heading {
+    font-size: 2.6rem;
+    letter-spacing: .3rem;
+    color: $color-primary-white;
+
+     @media screen and (max-width: 800px) {
+         font-size: 2rem;
+     }
+}
+
+@mixin circle-common-result {
+    margin: 7rem 0 5rem 0;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+
+    @media screen and (max-width: 1150px) {
+        width: 25rem;
+        height: 25rem;
+        border-size: 2.8rem !important;
+        background-size: 8rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 20rem;
+        height: 20rem;
+        background-size: 6rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 12rem;
+        height: 12rem;
+        margin: 2rem 0;
+        background-size: 4.5rem;
+    }
+}

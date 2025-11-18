@@ -1,0 +1,133 @@
+.main-section {
+    position: relative;
+    height: 56rem;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 800px) {
+        height: 45rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 30rem;
+    }
+}
+
+.main-game {
+    position: absolute;
+    padding: 5rem 0;
+    transition: all .5s;
+
+    @media screen and (max-width: 500px) {
+       padding: 2rem 0;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__triangle {
+        width: 32rem;
+        height: 30rem;
+        margin: 12rem 0 0 1rem;
+
+        @media screen and (max-width: 800px) {
+            width: 26rem;
+            height: 24rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 20rem;
+            height: 18rem;
+            margin-left: 0;
+        }
+    }
+
+    &__circle-paper {
+        @include circle-common;
+        top: 2rem;
+        left: -9.5rem;
+        border: 2.4rem solid $color-primary-paper-2;
+        box-shadow: 0px 11px 0px -3px #CCD0DB inset,
+            0 9px 0 0 $color-primary-paper-border;
+        background: $color-primary-white url('../images/icon-paper.svg') no-repeat center;
+        background-size: 7.5rem;
+        animation: init-circle-paper .8s;
+
+        @media screen and (max-width: 800px) {
+            border: 2.5rem solid $color-primary-paper-2;
+            box-shadow: 0px 9px 0px -3px #CCD0DB inset,
+                0 7px 0 0 $color-primary-paper-border;
+            background-size: 6rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            top: 5rem;
+            left: -4rem;
+            border: 1.8rem solid $color-primary-paper-2;
+            background-size: 5.5rem;
+        }
+    }
+
+    &__circle-scissors {
+        top: 2rem;
+        right: -10.5rem;
+        @include circle-common;
+        border: 2.6rem solid $color-primary-scissors-2;
+        box-shadow: 0px 11px 0px -3px #CCD0DB inset,
+            0 9px 0 0 $color-primary-scissors-border;
+        background: $color-primary-white url('../images/icon-scissors.svg') no-repeat center;
+        background-size: 7.5rem;
+        animation: init-circle-scissors .8s;
+
+        @media screen and (max-width: 800px) {
+            border: 2.5rem solid $color-primary-scissors-2;
+            box-shadow: 0px 9px 0px -3px #CCD0DB inset,
+                0 7px 0 0 $color-primary-scissors-border;
+            background-size: 6rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            top: 5rem;
+            right: -5rem;
+            border: 1.8rem solid $color-primary-scissors-2;
+            background-size: 5.5rem;
+        }
+    }
+
+    &__circle-rock {
+        bottom: -7rem;
+        right: 5rem;
+        @include circle-common;
+        border: 2.6rem solid $color-primary-rock-2;
+        box-shadow: 0px 11px 0px -3px #CCD0DB inset,
+            0 9px 0 0 $color-primary-rock-border;
+        background: $color-primary-white url('../images/icon-rock.svg') no-repeat center;
+        background-size: 7.5rem;
+        animation: init-circle-rock .8s;
+
+        @media screen and (max-width: 800px) {
+            border: 2.5rem solid $color-primary-rock-2;
+            box-shadow: 0px 9px 0px -3px #CCD0DB inset,
+                0 7px 0 0 $color-primary-rock-border;
+            background-size: 6rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            bottom: -4rem;
+            right: 3.5rem;
+            border: 1.8rem solid $color-primary-rock-2;
+            background-size: 5.5rem;
+        }
+    }
+}
+
+// Class to be play with JAVASCRIPT
+
+.show-main {
+    transform: translate(-300rem);
+}
+
+.show-result {
+    transform: translateX(0rem) !important;
+}

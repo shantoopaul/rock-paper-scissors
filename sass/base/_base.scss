@@ -8,9 +8,11 @@
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 body {
+    height: 100%;
     box-sizing: border-box;
     background-image: radial-gradient(circle, $color-bg-1, $color-bg-2);
     background-attachment: fixed;

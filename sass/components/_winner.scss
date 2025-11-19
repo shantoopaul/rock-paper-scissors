@@ -135,7 +135,7 @@
     }
 
     @media screen and (max-width: 800px) {
-        tranform: transateX(-4rem);
+        transform: transateX(-4rem);
         width: 21rem;
     }
 
@@ -153,7 +153,7 @@
     }
 
     @media screen and (max-width: 800px) {
-        tranform: transateX(2rem);
+        transform: transateX(2rem);
         width: 21rem;
     }
 
@@ -164,7 +164,7 @@
 
 .paper-magic {
     @include circle-common-result;
-    position: realtive;
+    position: relative;
     background: $color-primary-white url('../images/icon-paper.svg') no-repeat center;
     box-shadow: 0px 15px 0px -3px #CCD0DB inset,
         0 13px 0 0 $color-primary-paper-border;
@@ -192,7 +192,7 @@
 
 .rock-magic {
     @include circle-common-result;
-    position: realtive;
+    position: relative;
     background: $color-primary-white url('../images/icon-rock.svg') no-repeat center;
     box-shadow: 0px 15px 0px -3px #CCD0DB inset,
         0 13px 0 0 $color-primary-rock-border;
@@ -221,7 +221,7 @@
 
 .scissors-magic {
     @include circle-common-result;
-    position: realtive;
+    position: relative;
     background: $color-primary-white url('../images/icon-scissors.svg') no-repeat center;
     box-shadow: 0px 15px 0px -3px #CCD0DB inset,
         0 13px 0 0 $color-primary-scissors-border;

@@ -35,7 +35,6 @@
                         font-weight: 700;
                         font-size: 4.5rem;
                         line-height: 3.6rem;
-                        animation: neon-text .08s ease-in-out infinite alternate;
 
                         @media screen and (max-width: 800px) {
                                 font-size: 3.1rem;
@@ -57,7 +56,6 @@
                 display: flex;
                 justify-content: center;
                 padding: 1.7rem 0 0 .4rem;
-                animation: neon-box .08s ease-in-out infinite alternate;
 
                 @media screen and (max-width: 800px) {
                         width: 12.8rem;

@@ -2,7 +2,6 @@
 /*### Primary ####*/
 /*### Neutral ###*/
 /*### Background ###*/
-/* Neon text color */
 /* Intial animation for the Circle */
 @keyframes init-circle-paper {
   0% {
@@ -285,7 +284,6 @@ body .container-blur {
   font-weight: 700;
   font-size: 4.5rem;
   line-height: 3.6rem;
-  animation: neon-text 0.08s ease-in-out infinite alternate;
 }
 @media screen and (max-width: 800px) {
   .scoreboard__list__items {
@@ -307,7 +305,6 @@ body .container-blur {
   display: flex;
   justify-content: center;
   padding: 1.7rem 0 0 0.4rem;
-  animation: neon-box 0.08s ease-in-out infinite alternate;
 }
 @media screen and (max-width: 800px) {
   .scoreboard__score-display {
@@ -727,7 +724,7 @@ body .container-blur {
 }
 @media screen and (max-width: 800px) {
   .player-magic-init {
-    tranform: transateX(-4rem);
+    transform: transateX(-4rem);
     width: 21rem;
   }
 }
@@ -748,7 +745,7 @@ body .container-blur {
 }
 @media screen and (max-width: 800px) {
   .computer-magic-init {
-    tranform: transateX(2rem);
+    transform: transateX(2rem);
     width: 21rem;
   }
 }
@@ -767,7 +764,7 @@ body .container-blur {
   justify-content: center;
   align-items: center;
   transition: all 0.2s;
-  position: realtive;
+  position: relative;
   background: #fff url("../images/icon-paper.svg") no-repeat center;
   box-shadow: 0px 15px 0px -3px #CCD0DB inset, 0 13px 0 0 #2945C1;
   border: 3.5rem solid hsl(230, 89%, 65%);
@@ -778,7 +775,7 @@ body .container-blur {
   .paper-magic {
     width: 25rem;
     height: 25rem;
-    border-size: 2.8rem !important;
+    border-width: 2.8rem !important;
     background-size: 8rem;
   }
 }
@@ -824,7 +821,7 @@ body .container-blur {
   justify-content: center;
   align-items: center;
   transition: all 0.2s;
-  position: realtive;
+  position: relative;
   background: #fff url("../images/icon-rock.svg") no-repeat center;
   box-shadow: 0px 15px 0px -3px #CCD0DB inset, 0 13px 0 0 #9E1631;
   border: 3.5rem solid hsl(349, 70%, 56%);
@@ -835,7 +832,7 @@ body .container-blur {
   .rock-magic {
     width: 25rem;
     height: 25rem;
-    border-size: 2.8rem !important;
+    border-width: 2.8rem !important;
     background-size: 8rem;
   }
 }
@@ -881,7 +878,7 @@ body .container-blur {
   justify-content: center;
   align-items: center;
   transition: all 0.2s;
-  position: realtive;
+  position: relative;
   background: #fff url("../images/icon-scissors.svg") no-repeat center;
   box-shadow: 0px 15px 0px -3px #CCD0DB inset, 0 13px 0 0 #C76B19;
   border: 3.5rem solid hsl(40, 84%, 53%);
@@ -892,7 +889,7 @@ body .container-blur {
   .scissors-magic {
     width: 25rem;
     height: 25rem;
-    border-size: 2.8rem !important;
+    border-width: 2.8rem !important;
     background-size: 8rem;
   }
 }
